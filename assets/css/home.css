@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body {
+    background: #0a0a0a;
+    font-family: 'Roboto', Arial;
+    margin: 0;
+    font-size: 15px;
+}
+
+header {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    margin-top: -118px; /* 50% del alto*/
+    margin-left: -300px; /* 50% del ancho */
+}
+
+footer {
+    background-color: #D6A651;
+    font-family: 'Roboto', Arial;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+/* Parte superior */
+
+.top {
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #ddd;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-family: Luminari, fantasy;
+    font-size: 45px;
+    text-align: center;
+    line-height: 100px;
+    display: block;
+}
+
+/* Cards */
+
+.imgRedonda {
+    text-align: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 160px;
+    border: 4px solid #666;
+}
+
+.name {
+    font-weight: bold;
+}
+
+/* Botones de las cartas */
+.button-card {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    top: 0;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #0a0a0a;
+    font-weight: bold;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-decoration:none;
+    background: #D7A652;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    text-shadow: -1px -1px 0 rgba(180, 180, 180, 1);
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+/* Cartas para los personajes */
+.card {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    background-color: #1E1F24;
+    transition: 0.3s;
+    width: 175px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Paginacion */
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #D7A652;
+    font-size: 18px;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #D7A652;
+    color: #0a0a0a;
+}
